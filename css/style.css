@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@200;300;400;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito Sans', sans-serif;
+}
+
+:root {
+    --color1:#0E1961;
+    --color2:#6576E6;
+    --color3:#1F39E0;
+    --color4:#2B3261;
+    --color5:#182CAD;
+}
+
+.hide {
+    display: none !important;
+}
+
+body {
+    background-color: var(--color2);
+}
+
+header {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 2px solid white;
+}
+
+header h1 {
+    color: white;
+}
+
+.input-nome {
+    display: flex;
+    gap: 8px;
+}
+
+header input {
+    padding: 8px;
+    max-width: 400px;
+    width: 400px;
+    font-size: 17px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ccc;
+}
+
+button {
+    width: 20%;
+    padding: 8px;
+    font-size: 18px;
+    border-radius: 5px;
+    border: none;
+    background-color: var(--color5);
+    color: white;
+    cursor: pointer;
+    border: 2px solid var(--color5);
+    font-weight: bold;
+    transition: 0.4s;
+}
+
+button:hover {
+    background-color: white;
+    color: var(--color5);
+}
+
+button:disabled {
+    color: var(--color5);
+    background-color: white;
+}
+
+#nome-aluno {
+    font-size: 18px;
+    color: white;
+    border-bottom: 2px solid white;
+}
+
+.input-container {
+    background-color: white;
+    max-width: 340px;
+    padding: 10px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    border-radius: 5px;
+    transform: translate(-50%, -50%);
+}
+
+.input-container input {
+    width: 100%;
+    padding: 8px;
+    margin-bottom: 7px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid #ccc;
+    font-size: 18px;
+}
+
+.input-container h2 {
+    text-align: center;
+    padding: 8px;
+}
+
+.input-container button {
+    width: 100%;
+}
+
+.modal {
+    background-color: rgba(128, 128, 128, 0.712);
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 9;
+}
+
+.res {
+    background-color: white;
+    width: 100%;
+    max-width: 340px;
+    padding: 10px;
+    position: absolute;
+    border-radius: 5px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+table {
+    border: 1px solid black;
+    padding: 8px;
+    width: 100%;
+    border-radius: 5px;
+}
+
+.modal h1 {
+    text-align: center;
+}
+
+.modal i {
+    position: absolute;
+    padding: 5px;
+    right: 0;
+    top: 0;
+    font-size: 18px;
+    border-top-right-radius: 5px;
+}
+
+.modal i:hover {
+    background-color: red;
+    color: white;
+}
+
+td {
+    border: 1px solid black;
+    max-width: 200px;
+    padding: 5px;
+    text-align: center;
+    font-size: 18px;
+    border-radius: 5px;
+}
+
+#matricula {
+    text-align: center;
+    background-color: var(--color3);
+    color: white;
+    margin-bottom: 8px;
+    border: 1px solid black;
+    padding: 5px;
+}
+
+.des {
+    font-weight: bolder;
+}
+
+.bv {
+    color: white;
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.erro {
+    background-color: red;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
